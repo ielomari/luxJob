@@ -1,6 +1,6 @@
 #' Log search query
 #'
-#' Logs a search query in the `adem.search_logs` table.
+#' Logs a search query in the `student_ibtissam.search_logs` table.
 #'
 #' @param user_id Integer. The user performing the search.
 #' @param query Character. The search query string.
@@ -27,7 +27,7 @@ log_search <- function(user_id, query) {
     DBI::dbExecute(
       con,
       glue::glue_sql("
-        INSERT INTO adem.search_logs (user_id, query, query_time)
+        INSERT INTO student_ibtissam.search_logs (user_id, query, query_time)
         VALUES ({user_id}, {query}, NOW())
       ", .con = con)
     )
