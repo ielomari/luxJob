@@ -11,7 +11,7 @@ test_that("get_vacancies with skill, company, and canton filters returns results
 })
 
 test_that("get_vacancy_by_id returns correct structure for valid ID", {
-  result <- get_vacancy_by_id(123456)  # Replace with real vacancy ID
+  result <- get_vacancy_by_id(-1867865956)  # Replace with real vacancy ID
   skip_if(is.null(result), "Vacancy ID not found, skipping test")
 
   expect_type(result, "list")
