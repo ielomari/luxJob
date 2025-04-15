@@ -2,23 +2,18 @@
 % Please edit documentation in R/search_logs.R
 \name{log_search}
 \alias{log_search}
-\title{Log search query}
+\title{Log a search query from an API user}
 \usage{
 log_search(user_id, query)
 }
 \arguments{
-\item{user_id}{Integer. The user performing the search.}
+\item{user_id}{Integer ID of the user}
 
-\item{query}{Character. The search query string.}
+\item{query}{Search query string}
 }
 \value{
-TRUE if successfully logged, FALSE otherwise.
+TRUE if the log was inserted, FALSE otherwise
 }
 \description{
-Logs a search query in the \code{student_ibtissam.search_logs} table.
-}
-\examples{
-\dontrun{
-  log_search(user_id = 1, query = "machine learning jobs")
-}
+Log a search query from an API user
 }
