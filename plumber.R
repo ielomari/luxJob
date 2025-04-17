@@ -10,6 +10,9 @@
 
 # Load your package
 library(luxJob)
+library(DBI)
+library(glue)
+
 
 ### --- SKILLS ---
 
